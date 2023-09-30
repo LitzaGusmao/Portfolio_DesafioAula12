@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora Simples</title>
+<link rel="stylesheet" href="estilo_calculadora.css">
+<link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <img src="imagens/Logomarca_LG-removebg-preview.png" alt="Logotipo do site" class="header_logo">
+    <nav class="header_nav">
+      
+        <ul class="header_menu">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#testemunhos">Testemunhos</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="calculator">
+      <input type="text" id="display" disabled>
+      <div class="buttons">
+        <button class="number" onclick="addToDisplay('7')">7</button>
+        <button class="number" onclick="addToDisplay('8')">8</button>
+        <button class="number" onclick="addToDisplay('9')">9</button>
+        <button class="operator" onclick="addToDisplay('+')">+</button>
+        <button class="number" onclick="addToDisplay('4')">4</button>
+        <button class="number" onclick="addToDisplay('5')">5</button>
+        <button class="number" onclick="addToDisplay('6')">6</button>
+        <button class="operator" onclick="addToDisplay('-')">-</button>
+        <button class="number" onclick="addToDisplay('1')">1</button>
+        <button class="number" onclick="addToDisplay('2')">2</button>
+        <button class="number" onclick="addToDisplay('3')">3</button>
+        <button class="operator" onclick="addToDisplay('*')">*</button>
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button class="number" onclick="addToDisplay('0')">0</button>
+        <button class="equals" onclick="calculate()">=</button>
+        <button class="operator" onclick="addToDisplay('/')">/</button>
+      </div>
+    </div>
+    <script src="javascript_calculadora.js"></script>
+  </main>
+
+  <footer class="footer">&hearts; Elas na Tech 2023 &hearts;</footer>
+
+</body>
+
+</html>
